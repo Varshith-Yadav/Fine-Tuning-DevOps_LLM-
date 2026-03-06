@@ -1,0 +1,18 @@
+{
+  "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "dataset_path": "dataset/hf_devops_chat",
+  "output_dir": "training/artifacts/tinyllama-devops",
+  "max_length": 512,
+  "validation_split": 0.1,
+  "seed": 42,
+  "num_train_epochs": 1.0,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.03,
+  "per_device_train_batch_size": 1,
+  "per_device_eval_batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "logging_steps": 5,
+  "save_steps": 50,
+  "eval_steps": 25
+}
